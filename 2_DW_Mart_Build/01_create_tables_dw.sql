@@ -46,7 +46,7 @@ CREATE TABLE skills_job_dim (
     PRIMARY KEY (skill_id, job_id),
     FOREIGN KEY (skill_id) REFERENCES skills_dim(skill_id),
     FOREIGN KEY (job_id) REFERENCES job_postings_fact(job_id)
-);
+); 
 
 SELECT  table_name
 FROM    information_schema.tables
